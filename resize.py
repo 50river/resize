@@ -9,7 +9,7 @@ def resize_image(image, max_width, max_height):
 	new_height = int(image.height * resize_ratio)
 	return image.resize((new_width, new_height), Image.Resampling.LANCZOS)
 
-def resize_images_in_folder(folder_path, max_width=550, max_height=760):# 目標の画像サイズ設定
+def resize_images_in_folder(folder_path, max_width=969, max_height=1252):# 目標の画像サイズ設定
 	for root, _, files in os.walk(folder_path):#再起検索せずにフォルダ内のファイルを掘るwalk関数
 		for filename in files:
 			if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
