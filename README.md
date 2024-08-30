@@ -1,0 +1,3 @@
+Pillowライブラリが必要なので使う前に
+pip install Pillow
+最下部で画像の入っているフォルダを指定。
